@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url("../fonts/Montserrat-Medium.eot");
+  src: url("../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito Sans Regular';
+  src: url("../fonts/NunitoSans-Regular.eot");
+  src: url("../fonts/NunitoSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NunitoSans-Regular.woff") format("woff"), url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header {
+  background-color: #e9e9e9;
+}
+
+.title {
+  color: #232323;
+  font-family: 'Montserrat Medium', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.article {
+  color: #818181;
+  font-family: 'Nunito Sans Regular', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.button {
+  width: 180px;
+  height: 54px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-family: 'Montserrat Medium', sans-serif;
+  font-weight: 500;
+  background-color: #10c9c3;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 60.9vw;
+  margin: auto;
+}
+
+.navbar-wrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 38px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-wrap__menu {
+  width: 616px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Montserrat Medium', sans-serif;
+  font-weight: 500;
+}
+
+.menu__element {
+  color: #232323;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.menu__element:hover {
+  color: #10c9c3;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 170px;
+  margin-right: 3%;
+}
+
+.hero__title {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.hero__article {
+  width: 474px;
+  margin-top: 30px;
+}
+
+.hero__text {
+  font-size: 18px;
+  letter-spacing: 0.09px;
+  line-height: 28px;
+}
+
+.hero__button {
+  margin-top: 38px;
+  margin-bottom: 200px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url('../fonts/Montserrat-Medium.eot');
+  src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Medium.woff') format('woff'),
+    url('../fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito Sans Regular';
+  src: url('../fonts/NunitoSans-Regular.eot');
+  src: url('../fonts/NunitoSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NunitoSans-Regular.woff') format('woff'),
+    url('../fonts/NunitoSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin label-font {
+  font-family: 'Montserrat Medium', sans-serif;
+  font-weight: 500;
+}
+
+@mixin article-font {
+  font-family: 'Nunito Sans Regular', sans-serif;
+  font-weight: 400;
+}
