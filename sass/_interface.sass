@@ -1,17 +1,21 @@
-*
+html
   box-sizing: border-box
 
-h1
+*, *::before, *::after
+  box-sizing: inherit
+
+h1,h2,h3,h4
   margin-top: 0
   margin-bottom: 0
 
-.header
-  background-color: $deep-grey-bg
-
+.grey-bg
+  background-color: $light-grey-bg
+  
 .title
   color: $label-color
   +label-font
   font-size: 30px
+  font-weight: 600
 
 .article
   color: $article-color
@@ -29,3 +33,7 @@ h1
   background-color: $primary-tiffany
   border: none
   cursor: pointer
+  padding: 0
+  transition: all 0.2s
+  &:hover
+    background-color: #26bbb6b2
