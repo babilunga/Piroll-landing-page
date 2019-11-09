@@ -1,0 +1,65 @@
+.process
+  &-wrap
+    padding: 100px 0
+    &__title
+      text-align: center
+    &__article
+      margin-top: 40px
+      width: 500px
+      text-align: center
+      margin-right: auto
+      margin-left: auto
+    &__text
+      letter-spacing: 0.08px
+      line-height: 24px
+
+.media
+  position: relative
+  margin-top: 50px
+  &__controls
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+  &:hover .pause
+    opacity: 1
+  &__video-wrap
+    width: 100%
+    height: 100%
+
+.video
+  width: 100%
+  height: 100%
+
+#play-pause
+  width: 85px
+  height: 85px
+  background-color: $primary-tiffany
+  border-radius: 50%
+  border: none
+  box-shadow: 0 0 21px #00000028
+  transition: all .3s
+  outline:none
+  &:hover .media__video-wrap
+    opacity: 0
+  &:hover
+    cursor: pointer
+  &:focus 
+    outline: none
+  &:active 
+    outline: none
+
+.play::before
+  content: url(../img/main/process/play.png)
+
+.pause
+  opacity: 0
+  transition: all .4s
+
+.pause::before
+  content: url(../img/main/process/pause.png)
+  
