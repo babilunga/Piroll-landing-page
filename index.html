@@ -12,11 +12,31 @@
 
 <body>
   <header class="header grey-bg" id="home">
+
+    <div class="btn-menu-block">
+      <a href="#" class="menu-btn">
+        <span class="menu-btn__line"></span>
+      </a>
+      <nav class="btn-menu-nav">
+        <a class="btn-menu__link" href="#">home</a>
+        <a class="btn-menu__link" href="#">about</a>
+        <a class="btn-menu__link" href="#">work</a>
+        <a class="btn-menu__link" href="#">process</a>
+        <a class="btn-menu__link" href="#">services</a>
+        <a class="btn-menu__link" href="#">testimonials</a>
+        <a class="btn-menu__link" href="#">contact</a>
+      </nav>
+    </div>
+    <!-- /.hamburger-->
+
     <!--.navbar-->
     <div class="navbar">
       <div class="container">
         <div class="navbar-wrap">
           <img src="img/header/logo.png" alt="Piroll" class="navbar-wrap__logo">
+
+
+
           <div class="menu navbar-wrap__menu">
             <a href="#home" class="menu__element"><strong>home</strong></a>
             <a href="#about" class="menu__element"><strong>about</strong></a>
@@ -85,7 +105,6 @@
           <div class="skills-wrap__sidebar-left">
             <h1 class="title skills-wrap__title">Professional Skills</h1>
             <div class="skills-wrap__graphs">
-
               <div class="skills-wrap__single-wrap">
                 <h2 class="title skills-wrap__graph-title">UI/UX Design 75%</h2>
                 <div class="skills-wrap__lines">
@@ -125,7 +144,7 @@
       <div class="container">
         <div class="numbers-wrap">
           <div class="numbers-wrap__statistic">
-            <img src="img/main/numbers/stat-1.png" alt="Piroll statistics">
+            <img src="img/main/numbers/stat-1.png" alt="Piroll statistics" class="numbers-wrap__img">
             <div class="numbers-wrap__desc">
               <h2 class="title numbers-wrap__title">548</h2>
               <h2 class="title numbers-wrap__description">projects completed</h2>
@@ -133,7 +152,7 @@
           </div>
           <!-- /.numbers-wrap__statistic -->
           <div class="numbers-wrap__statistic">
-            <img src="img/main/numbers/stat-2.png" alt="Piroll statistics">
+            <img src="img/main/numbers/stat-2.png" alt="Piroll statistics" class="numbers-wrap__img">
             <div class="numbers-wrap__desc">
               <h2 class="title numbers-wrap__title">1465</h2>
               <h2 class="title numbers-wrap__description">working hours</h2>
@@ -141,7 +160,7 @@
           </div>
           <!-- /.numbers-wrap__statistic -->
           <div class="numbers-wrap__statistic">
-            <img src="img/main/numbers/stat-3.png" alt="Piroll statistics">
+            <img src="img/main/numbers/stat-3.png" alt="Piroll statistics" class="numbers-wrap__img">
             <div class="numbers-wrap__desc">
               <h2 class="title numbers-wrap__title">612</h2>
               <h2 class="title numbers-wrap__description">positive feedbacks</h2>
@@ -149,7 +168,7 @@
           </div>
           <!-- /.numbers-wrap__statistic -->
           <div class="numbers-wrap__statistic">
-            <img src="img/main/numbers/stat-4.png" alt="Piroll statistics">
+            <img src="img/main/numbers/stat-4.png" alt="Piroll statistics" class="numbers-wrap__img">
             <div class="numbers-wrap__desc">
               <h2 class="title numbers-wrap__title">735</h2>
               <h2 class="title numbers-wrap__description">happy clients</h2>
@@ -341,53 +360,55 @@
 
 
     <div class="testimonials" id="testimonials">
-      <div class="slider">
-        <div class="slider__content">
-          <div class="slide">
-            <h3 class="title testimonials__review">
-              “ Outstanding job and exceeded all expectations. It was a pleasure
-              to work with them on a sizable first project and am looking
-              forward to start the next one asap.”
-            </h3>
-            <h3 class="title testimonials__name">
-              Michael Hopkins
-            </h3>
+      <div class="container">
+        <div class="slider">
+          <div class="slider__content">
+            <div class="slide">
+              <h3 class="title testimonials__review">
+                “ Outstanding job and exceeded all expectations. It was a pleasure
+                to work with them on a sizable first project and am looking
+                forward to start the next one asap.”
+              </h3>
+              <h3 class="title testimonials__name">
+                Michael Hopkins
+              </h3>
+            </div>
+            <div class="slide">
+              <h3 class="title testimonials__review">
+                “ Британский рок-певец, (Black Sabbath) оказавшей
+                значительное влияние на появление таких музыкальных
+                стилей (хард-рок...).
+              </h3>
+              <h3 class="title testimonials__name">
+                Ozzy Osbourne
+              </h3>
+            </div>
+            <div class="slide">
+              <h3 class="title testimonials__review">
+                “ PeePeePooPoo PeePee PooPoo PeePeePooPooPeePee PooPoo
+                PeePee PooPoo PeePee PooPooPeePee PooPoo PeePee PooPooPeePee... ”
+              </h3>
+              <h3 class="title testimonials__name">
+                Peepee Poopoo
+              </h3>
+            </div>
           </div>
-          <div class="slide">
-            <h3 class="title testimonials__review">
-              “ Британский рок-певец, (Black Sabbath) оказавшей
-              значительное влияние на появление таких музыкальных стилей, как хард-рок и хеви-метал. «Крёстный отец
-              хэви-метала». ”
-            </h3>
-            <h3 class="title testimonials__name">
-              Ozzy Osbourne
-            </h3>
+          <!-- /.slider__content-->
+          <div class="slider__wrap-dots">
+            <div class="slider__dots">
+              <div class="demo" onclick=currentDiv(1)>
+              </div>
+              <div class="demo chosen" onclick=currentDiv(2)>
+              </div>
+              <div class="demo" onclick=currentDiv(3)>
+              </div>
+            </div>
           </div>
-          <div class="slide">
-            <h3 class="title testimonials__review">
-              “ PeePee PooPoo PeePee PooPoo PeePee PooPoo PeePee PooPoo
-              PeePee PooPoo PeePee PooPoo PeePee PooPoo PeePee PooPoo PeePee PooPoo PeePee
-              PeePee PooPoo PeePee PooPoo... ”
-            </h3>
-            <h3 class="title testimonials__name">
-              Peepee Poopoo
-            </h3>
-          </div>
+          <!-- /.slider__wrap-dots-->
         </div>
-        <!-- /.slider__content-->
-        <div class="slider__wrap-dots">
-          <div class="slider__dots">
-            <div class="demo" onclick=currentDiv(1)>
-            </div>
-            <div class="demo chosen" onclick=currentDiv(2)>
-            </div>
-            <div class="demo" onclick=currentDiv(3)>
-            </div>
-          </div>
-        </div>
-        <!-- /.slider__wrap-dots-->
+        <!-- /.slider-->
       </div>
-      <!-- /.slider-->
+
     </div>
     <!-- /.testimonials-->
 
@@ -395,10 +416,22 @@
     <div class="clients">
       <div class="container">
         <div class="clients-wrap">
-          <img src="img/main/clients/clients1.png" alt="clients">
-          <img src="img/main/clients/clients2.png" alt="clients">
-          <img src="img/main/clients/clients3.png" alt="clients">
-          <img src="img/main/clients/clients1.png" alt="clients">
+          <div class="clients__img">
+            <img src="img/main/clients/clients1.png" alt="clients">
+          </div>
+          <div class="clients__img">
+            <img src="img/main/clients/clients2.png" alt="clients">
+          </div>
+          <div class="clients__img">
+            <img src="img/main/clients/clients3.png" alt="clients">
+          </div>
+          <div class="clients__img">
+            <img src="img/main/clients/clients1.png" alt="clients">
+          </div>
+
+
+
+
         </div>
       </div>
     </div>
@@ -429,53 +462,57 @@
 
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer-wrap">
-
-        <div class="footer__company">
-          <h2 class="title footer__title">Piroll Design, Inc.</h2>
-          <span class="article footer__description">
-            © 2017 Piroll. All rights reserved.
-            Designed by robirurk.
-          </span>
-        </div>
-        <!-- /.footer__company-->
-
+    <div class="footer-wrap">
+      <div class="footer__company">
+        <h2 class="title footer__title">Piroll Design, Inc.</h2>
+        <span class="article footer__description">
+          © 2017 Piroll. All rights reserved.
+          Designed by robirurk.
+        </span>
+      </div>
+      <!-- /.footer__company-->
+      <div class="footer__wrapper">
         <div class="footer__info">
           <a href="mailto:hello@pirolltheme.com" class="footer__phone article item">hello@pirolltheme.com</a>
           <a href="tel:+44987065908" class="footer__email article item">+44 987 065 908</a>
         </div>
         <!-- /.footer__info-->
 
-        <div class="footer__menu">
-          <a href="#work" class="item article">Projects</a>
-          <a href="#about" class="item article">About</a>
-          <a href="#services" class="item article">Services</a>
-          <a href="#skills" class="item article">Carreer</a>
-        </div>
-        <!-- /.footer__menu-->
+        <div class="footer__navbar-wrap">
+          <div class="footer__menu">
+            <a href="#work" class="item article">Projects</a>
+            <a href="#about" class="item article">About</a>
+            <a href="#services" class="item article">Services</a>
+            <a href="#skills" class="item article">Carreer</a>
+          </div>
+          <!-- /.footer__menu-->
 
-        <div class="footer__menu">
-          <a href="#" class="item article">News</a>
-          <a href="#" class="item article">Events</a>
-          <a href="#contact" class="item article">Contact</a>
-          <a href="#" class="item article">Legals</a>
-        </div>
-        <!-- /.footer__menu-->
+          <div class="footer__menu">
+            <a href="#" class="item article">News</a>
+            <a href="#" class="item article">Events</a>
+            <a href="#contact" class="item article">Contact</a>
+            <a href="#" class="item article">Legals</a>
+          </div>
+          <!-- /.footer__menu-->
 
-        <div class="footer__socials">
-          <a href="#" class="item article">Facebook</a>
-          <a href="#" class="item article">Twitter</a>
-          <a href="#" class="item article">Instagram</a>
-          <a href="#" class="item article">Dribbble</a>
+          <div class="footer__socials">
+            <a href="#" class="item article">Facebook</a>
+            <a href="#" class="item article">Twitter</a>
+            <a href="#" class="item article">Instagram</a>
+            <a href="#" class="item article">Dribbble</a>
+          </div>
+          <!-- /.footer__socials-->
         </div>
-        <!-- /.footer__socials-->
-
+        <!-- /.footer__navbar-wrap-->
       </div>
+      <!-- /.footer__wrapper-->
+
     </div>
   </footer>
   <!-- /.footer -->
 
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/hamburger.js"></script>
   <script type="text/javascript" src="js/slider.js"></script>
   <script type="text/javascript" src="js/video.js"></script>
 </body>

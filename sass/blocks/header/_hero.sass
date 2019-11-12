@@ -1,19 +1,43 @@
 .hero
   &-wrap
+  width: 40.5128%
+  max-width: 474px
   margin-top: 170px
-  display: flex
-  justify-content: flex-end
+  margin-left: 56.41025%
   margin-right: 28px
   &__title
     font-size: 38px
     width: fit-content
   &__article
-    width: 474px
+    width: 100%
     margin-top: 30px
   &__text
+    width: 100%
     font-size: 18px
     letter-spacing: 0.09px
     line-height: 28px
   &__button
     margin-top: 38px
     margin-bottom: 200px
+
+@media screen and ( max-width: 955px )
+  .hero
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+    margin-top: 100px
+    &-wrap
+      width: 100%
+      margin-left: 0
+      margin-right: auto
+      text-align: center
+      align-items: center
+
+@media screen and ( max-width: 955px )
+  .hero
+    &-wrap
+    &__title
+      font-size: 28px
+      margin-left: auto
+      margin-right: auto
+    &__article

@@ -1,38 +1,107 @@
 .footer
   background-color: #141414
   &-wrap
+    width: 90%
+    max-width: 1500px
     padding: 100px 0
     display: flex
+    justify-content: space-between
+    margin-left: auto
+    margin-right: auto
+  &__wrapper
+    display: flex
+    width: 45%
+  &__company
   &__title
     color: #ffffff
     font-size: 18px
   &__description
-    width: 255px
     color: #bcbcbc
     font-size: 15px
     display: block
     margin-top: 27px
   &__info
+    margin-right: 21%
+  
+  &__navbar-wrap
+    width: 45%
+    max-width: 675px
     display: flex
-    flex-direction: column
-    height: 35px
-    margin-left: 246px
-    margin-right: 90px
   &__menu
     display: flex
     flex-flow: column
-    height: 86px
-    margin-left: 55px
+    margin-right: 10%
   &__socials
     display: flex
     flex-direction: column
     margin-left: auto
-
 .item
   text-decoration: none
   color: #bcbcbc
   font-size: 15px
   line-height: 24px
 .footer__phone, .footer__email
+  display: block
   &:hover
     text-decoration: underline
+
+
+@media screen and ( max-width: 1205px )
+  .footer
+    &__info
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      margin-right: 0%
+    &__menu
+      width: 100%
+      text-align: right
+    &__socials
+      width: 100%
+      text-align: right
+    &__navbar-wrap
+      width: 60%
+      display: flex
+      flex-direction: row
+      margin-top: 27px
+      margin-left: auto
+    &__wrapper
+      display: flex
+      flex-direction: column
+      margin-left: auto
+      width: 78.3%
+  .footer__phone, .footer__email
+    text-align: right
+
+@media screen and ( max-width: 768px )
+  .footer
+    &__info
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      margin-right: 0%
+    &__menu
+      width: 100%
+      text-align: right
+    &__socials
+      width: 100%
+      text-align: right
+    &__navbar-wrap
+      width: 100%
+      display: flex
+      flex-direction: row
+      margin-top: 27px
+      margin-left: auto
+    &__wrapper
+      display: flex
+      flex-direction: column
+      margin-left: auto
+      width: 78.3%
+  .footer__phone, .footer__email
+    text-align: right
+
+@media screen and ( max-width: 490px )
+  .footer
+    &__socials
+      display: none
+  

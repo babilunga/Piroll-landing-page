@@ -1,12 +1,16 @@
 .navbar
-
+  width: 100%
   &-wrap
     align-items: center
     padding: 38px 0px
     display: flex
     justify-content: space-between
+    &__logo
+      margin-right: 4%
+      margin-bottom: auto
     &__menu
-      width: 616px
+      width: 55%
+      max-width: 616px
       display: flex
       justify-content: space-between
 
@@ -21,3 +25,106 @@
     transition: all 0.2s
     &:hover
       color: $primary-tiffany
+      
+
+.menu-btn
+  display: block
+  width: 50px
+  height: 50px
+  background-color: $primary-tiffany
+  border-radius: 50%
+  position: relative
+  &__line
+    position: absolute
+    height: 2px
+    width: 20px
+    top: 50% 
+    margin-top: -1px
+    left: 50%
+    margin-left: -10px
+    background-color: #fff
+    &::before, &::after
+      content: ''
+      display: block
+      transition: .4s
+    &::before
+      transform: translateY(-7px)
+    &::after
+      transform: translateY(7px)
+
+.menu-btn__line::before, .menu-btn__line::after
+  position: absolute
+  height: 2px
+  width: 20px
+  top: 50% 
+  margin-top: -1px
+  left: 50%
+  margin-left: -10px
+  background-color: #fff
+
+.menu-btn_active .menu-btn__line
+  height: 0
+.menu-btn_active .menu-btn__line::before
+  transform: rotate(45deg)
+.menu-btn_active .menu-btn__line::after
+  transform: rotate(-45deg)
+
+.btn-menu-block
+  position: absolute
+  top: 34px
+  right: 50px
+  display: flex
+  flex-direction: column
+  text-align: right
+  align-items: flex-end
+  display: none
+
+.btn-menu-nav
+  display: flex
+  flex-direction: column
+  margin-top: 20px
+  transition: .3s
+  padding: 40px 15px 60px 60px
+  background-color: $primary-tiffany
+  border-top-left-radius: 50px
+  border-bottom-left-radius: 50px
+  opacity: 0
+  transform: translateX(250px)
+
+.btn-menu__link
+  +label-font
+  color: #fff
+  font-size: 20px
+  margin-top: 20px
+  display: inline-block
+  text-decoration: none
+  text-transform: uppercase
+  transform-origin: right center
+  opacity: 0
+  transform: translateX(250px)
+  transition: .4s
+
+.btn-menu-nav_active
+  opacity: .8
+  transform: translateX(50px)
+
+.btn-menu__link_active
+  opacity: 1
+  transform: translateX(0px)
+
+
+@media screen and ( max-width: 1390px )
+  .navbar
+    &-wrap
+      &__menu
+        width: 80%
+
+
+@media screen and ( max-width: 955px )
+  .navbar
+    &-wrap
+      &__menu
+        display: none
+  .btn-menu-block
+    display: flex
+  

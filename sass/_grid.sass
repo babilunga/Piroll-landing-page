@@ -1,10 +1,17 @@
 .container
-  width: 1270px
+  max-width: 1270px
+  width: 66.145833% // 1270 / 1920 * 100 = 66,145833%
   margin: auto
-  // border: 1px solid
+  // border-right: 2px  #ff0000 solid
+  // border-left: 2px  #ff0000 solid
 
 .roll
   display: flex
 
 .single-wrap
   width: 25%
+
+@media screen and ( max-width: 768px )
+  .container
+    width: 90%
+  
